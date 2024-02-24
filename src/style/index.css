@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body:hover #cursor-dot,
+body:hover #cursor-outline {
+	opacity: 1;
+}
+
+* {
+	@apply scroll-smooth cursor-none transition-colors;
+}
+
+.inputbox {
+	@apply h-14 rounded-full text-gray-900/80 caret-neutral-100/80 dark:text-neutral-100/90 text-xl font-medium px-6 bg-neutral-100/70 dark:bg-neutral-100/20 placeholder:text-lg dark:hover:border-neutral-100/50 hover:border-gray-900/30 dark:focus:border-neutral-100/80 focus:border-gray-900/50 focus:border-[3px] duration-300 outline-none border-2 border-transparent backdrop-blur-3xl placeholder:dark:text-neutral-100/70 placeholder:text-gray-900/60;
+}
+
+.visiblity-hidden {
+	@apply invisible opacity-0;
+}
