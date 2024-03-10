@@ -1,8 +1,8 @@
 import { HTMLIcon, CSSIcon, JSIcon, ReactIcon, TailwindIcon } from '../asset/icons';
-import AirBnbClone from "../public/AirbnbClone.png";
-import CambridgeHospital from "../public/CambridgeHospital.png";
-import NikeClone from "../public/NikeClone.png";
-import PortfolioResponsive from "../public/PortfolioResponsive.png";
+import AirBnbClone from "src/public/AirbnbClone.png";
+import CambridgeHospital from "src/public/CambridgeHospital.png";
+import NikeClone from "src/public/NikeClone.png";
+import PortfolioResponsive from "src/public/PortfolioResponsive.png";
 
 export const NavLinks = [
 	{ name: 'Home', link: '/' },
