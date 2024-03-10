@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { animate, stagger, spring } from 'motion';
-	import ProfileImage from '/public/PFP.jpg';
+	import ProfileImage from '../../public/PFP.jpg';
 	import SplitType from 'split-type';
 
 	let lineOne: HTMLDivElement;
