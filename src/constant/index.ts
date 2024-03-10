@@ -1,4 +1,8 @@
 import { HTMLIcon, CSSIcon, JSIcon, ReactIcon, TailwindIcon } from '../asset/icons';
+import AirBnbClone from "../public/AirbnbClone.png";
+import CambridgeHospital from "../public/CambridgeHospital.png";
+import NikeClone from "../public/NikeClone.png";
+import PortfolioResponsive from "../public/PortfolioResponsive.png";
 
 export const NavLinks = [
 	{ name: 'Home', link: '/' },
@@ -21,28 +25,28 @@ let ProjectFourDesc =
 export const Projects = [
 	{
 		id: 1,
-		imgSrc: './asset/img/ProjectsImg/AirbnbClone.png',
+		imgSrc: AirBnbClone,
 		name: 'Airbnb Hero Clone',
 		desc: ProjectOneDesc,
 		tech: [HTMLIcon, CSSIcon]
 	},
 	{
 		id: 2,
-		imgSrc: './asset/img/ProjectsImg/NikeClone.png',
+		imgSrc: NikeClone,
 		name: 'Nike Redesigned',
 		desc: ProjectTwoDesc,
 		tech: [ReactIcon, TailwindIcon]
 	},
 	{
 		id: 3,
-		imgSrc: './asset/img/ProjectsImg/CambridgeHospital.png',
+		imgSrc: CambridgeHospital,
 		name: 'Cambridge Hospital',
 		desc: ProjectThreeDesc,
 		tech: [HTMLIcon, CSSIcon, JSIcon]
 	},
 	{
 		id: 4,
-		imgSrc: './asset/img/ProjectsImg/PortfolioResponsive.png',
+		imgSrc: PortfolioResponsive,
 		name: 'Portfolio',
 		desc: ProjectFourDesc,
 		tech: [HTMLIcon, CSSIcon, JSIcon]
