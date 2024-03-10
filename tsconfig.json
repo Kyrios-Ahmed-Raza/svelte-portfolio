@@ -10,13 +10,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "bundler",
-		"lib": ["es5", "es6", "dom", "dom.iterable"],
-		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"],
-			"$pub": ["src/public"],
-			"$pub/*": ["src/public/*"]
-		}
+		"lib": ["es5", "es6", "dom", "dom.iterable"]
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
