@@ -21,28 +21,28 @@ let ProjectFourDesc =
 export const Projects = [
 	{
 		id: 1,
-		imgSrc: 'src/asset/img/ProjectsImg/AirbnbClone.png',
+		imgSrc: './asset/img/ProjectsImg/AirbnbClone.png',
 		name: 'Airbnb Hero Clone',
 		desc: ProjectOneDesc,
 		tech: [HTMLIcon, CSSIcon]
 	},
 	{
 		id: 2,
-		imgSrc: 'src/asset/img/ProjectsImg/NikeClone.png',
+		imgSrc: './asset/img/ProjectsImg/NikeClone.png',
 		name: 'Nike Redesigned',
 		desc: ProjectTwoDesc,
 		tech: [ReactIcon, TailwindIcon]
 	},
 	{
 		id: 3,
-		imgSrc: 'src/asset/img/ProjectsImg/CambridgeHospital.png',
+		imgSrc: './asset/img/ProjectsImg/CambridgeHospital.png',
 		name: 'Cambridge Hospital',
 		desc: ProjectThreeDesc,
 		tech: [HTMLIcon, CSSIcon, JSIcon]
 	},
 	{
 		id: 4,
-		imgSrc: 'src/asset/img/ProjectsImg/PortfolioResponsive.png',
+		imgSrc: './asset/img/ProjectsImg/PortfolioResponsive.png',
 		name: 'Portfolio',
 		desc: ProjectFourDesc,
 		tech: [HTMLIcon, CSSIcon, JSIcon]
