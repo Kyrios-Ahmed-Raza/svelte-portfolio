@@ -34,27 +34,39 @@
 	});
 </script>
 
-<div class="w-full px-[15%] py-[100px] h-full text-center flex items-center flex-col">
-	<h1 id="project_title" class="text-5xl dark:text-neutral-100/80 text-gray-950 font-semibold">
+<div
+	class="flex h-full w-full flex-col items-center px-[15%] py-[100px] text-center max-md:px-[5%]"
+>
+	<h1
+		id="project_title"
+		class="text-5xl font-semibold text-gray-950 dark:text-neutral-100/80 max-md:text-4xl"
+	>
 		My Work
 	</h1>
-	<div id="projects-wrapper" class="w-full h-auto flex mt-10 items-center flex-col gap-10">
+	<div
+		id="projects-wrapper"
+		class="mt-10 flex h-auto w-full flex-col items-center gap-10 max-md:mt-6"
+	>
 		{#each Projects as item}
 			<div
-				class="w-[60%] text-start overflow-clip flex h-[300px] rounded-xl bg-neutral-50/80 dark:bg-neutral-100/10 backdrop-blur-xl shadow-lg"
+				class="flex h-[300px] w-[60%] overflow-clip rounded-xl bg-neutral-50/80 text-start shadow-lg backdrop-blur-xl dark:bg-neutral-100/10 max-2xl:w-[80%] max-lg:w-[90%] max-md:h-auto max-md:w-full max-md:flex-col"
 			>
-				<div class="w-[40%] h-full">
-					<img src={item.imgSrc} class="w-full h-full object-cover" alt="Projects" />
+				<div class="h-full w-[40%] max-md:h-[40%] max-md:w-full">
+					<img src={item.imgSrc} class="h-full w-full object-cover" alt="Projects" />
 				</div>
-				<div class="w-[60%] h-full flex flex-col p-4">
-					<h1 class="text-2xl dark:text-neutral-100/80 text-gray-950 font-semibold mb-2">
+				<div class="flex h-full w-[60%] flex-col p-4 max-md:w-full">
+					<h1
+						class="mb-2 text-2xl font-semibold text-gray-950 dark:text-neutral-100/80 max-md:text-xl"
+					>
 						{item.name}
 					</h1>
-					<p class="text-lg dark:text-neutral-100/60 text-gray-800 mb-10">{item.desc}</p>
+					<p class="mb-10 text-lg text-gray-800 dark:text-neutral-100/60 max-md:text-base">
+						{item.desc}
+					</p>
 
 					<div class="flex gap-3">
 						{#each item.tech as src}
-							<img {src} class="w-[32px] h-[32px] object-contain" alt="logo" />
+							<img {src} class="h-[32px] w-[32px] object-contain" alt="logo" />
 						{/each}
 					</div>
 				</div>

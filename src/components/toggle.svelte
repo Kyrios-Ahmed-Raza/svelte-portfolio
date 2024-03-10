@@ -2,12 +2,13 @@
 	import { fly } from 'svelte/transition';
 	import { Moon, Sun } from 'lucide-svelte';
 	import { theme, toggleTheme } from '$lib/theme';
+	export let classNmae: string;
 </script>
 
 <button
 	on:click={toggleTheme}
 	aria-label="Toggle theme"
-	class="text-gray-800 transition-none dark:text-neutral-100/80 absolute right-10 interactable"
+	class={`interactable absolute right-10 text-gray-800 transition-none dark:text-neutral-100/80 ${classNmae || ''}`}
 >
 	{#if $theme === 'dark'}
 		<div in:fly={{ y: 10 }}>

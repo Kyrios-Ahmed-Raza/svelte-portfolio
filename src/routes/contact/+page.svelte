@@ -42,10 +42,12 @@
 	});
 </script>
 
-<div class="w-full h-screen flex flex-col items-center justify-center relative z-10">
+<div
+	class="relative z-10 flex h-screen w-full flex-col items-center justify-center max-md:h-auto max-md:px-[5%] max-md:py-[100px]"
+>
 	<h1
 		id="contact-title"
-		class="text-5xl relative z-10 font-semibold mb-6 dark:text-neutral-100/80 text-gray-900"
+		class="relative z-10 mb-6 text-5xl font-semibold text-gray-900 dark:text-neutral-100/80 max-md:mb-10 max-md:text-4xl"
 	>
 		Contact
 	</h1>
@@ -53,49 +55,49 @@
 	<form
 		id="main-form"
 		bind:this={mainForm}
-		class="w-[30%] relative overflow-hidden z-10 bg-neutral-100/30 backdrop-blur-3xl p-6 flex flex-col gap-6 rounded-[2rem] dark:bg-neutral-100/10"
+		class="relative z-10 flex w-[30%] flex-col gap-6 overflow-hidden rounded-[2rem] bg-neutral-100/30 p-6 backdrop-blur-3xl dark:bg-neutral-100/10 max-2xl:w-[40%] max-xl:w-[50%] max-lg:w-[60%] max-md:w-full max-md:gap-4 max-md:p-4"
 	>
 		<div
 			id="form-bubble"
-			class="absolute z-[-10] blur-[100px] bg-gradient-to-r from-bubbleclr1/70 to-bubbleclr2/70 dark:from-bubbleclr1/90 dark:to-bubbleclr2/90 w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+			class="absolute left-1/2 top-1/2 z-[-10] h-64 w-64 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-bubbleclr1/70 to-bubbleclr2/70 blur-[100px] dark:from-bubbleclr1/90 dark:to-bubbleclr2/90"
 		></div>
-		<input type="text" id="name" placeholder="Enter your Full-name: " class="w-full inputbox" />
+		<input type="text" id="name" placeholder="Enter your Full-name: " class="inputbox w-full" />
 		<input
 			type="email"
 			id="email"
 			placeholder="Enter your Email-address: "
-			class="w-full inputbox"
+			class="inputbox w-full"
 		/>
 
 		<textarea
 			name="textarea"
 			id="textarea"
 			placeholder="Enter your message..."
-			class="p-4 rounded-2xl caret-gray-900/80 dark:caret-slate-100/80 bg-neutral-100/70 text-gray-900/90 dark:text-neutral-100/80 text-xl dark:bg-neutral-100/20 dark:hover:border-neutral-100/50 hover:border-gray-900/30 dark:focus:border-neutral-100/80 focus:border-gray-900/50 duration-300 outline-none border-2 border-transparent placeholder:dark:text-neutral-100/70 placeholder:text-gray-900/80 backdrop-blur-3xl"
+			class="rounded-2xl border-2 border-transparent bg-neutral-100/70 p-4 text-xl text-gray-900/90 caret-gray-900/80 outline-none backdrop-blur-3xl duration-300 placeholder:text-gray-900/80 hover:border-gray-900/30 focus:border-gray-900/50 dark:bg-neutral-100/20 dark:text-neutral-100/80 dark:caret-slate-100/80 placeholder:dark:text-neutral-100/70 dark:hover:border-neutral-100/50 dark:focus:border-neutral-100/80 max-md:text-xl max-md:placeholder:text-lg"
 			cols="30"
 			rows="10"
 		></textarea>
 
-		<div class="flex gap-4 items-center">
+		<div class="flex items-center gap-4 max-md:flex-wrap">
 			<button
-				class="flex group gap-2 items-center px-12 justify-center w-[50%] h-14 bg-neutral-100/70 backdrop-blur-xl dark:bg-neutral-100/20 dark:hover:bg-neutral-100/30 hover:bg-neutral-300/30 text-gray-900/80 interactable cursor-none dark:text-neutral-100/80 font-semibold rounded-full text-xl"
+				class="interactable group flex h-14 w-[50%] cursor-none items-center justify-center gap-2 rounded-full bg-neutral-100/70 px-12 text-xl font-semibold text-gray-900/80 backdrop-blur-xl hover:bg-neutral-300/30 dark:bg-neutral-100/20 dark:text-neutral-100/80 dark:hover:bg-neutral-100/30 max-md:h-12 max-md:w-full max-md:text-lg"
 				type="submit"
 			>
 				Submit
-				<Forward class="group-hover:translate-x-2 transition-transform" />
+				<Forward class="transition-transform group-hover:translate-x-2" />
 			</button>
 			<a
-				class="flex group gap-2 items-center px-12 h-14 bg-neutral-100/70 backdrop-blur-xl dark:bg-neutral-100/20 dark:hover:bg-neutral-100/30 hover:bg-neutral-300/30 text-gray-900/80 interactable cursor-none dark:text-neutral-100/80 font-semibold rounded-full text-xl"
+				class="interactable group flex h-14 cursor-none items-center gap-2 rounded-full bg-neutral-100/70 px-12 text-xl font-semibold text-gray-900/80 backdrop-blur-xl hover:bg-neutral-300/30 dark:bg-neutral-100/20 dark:text-neutral-100/80 dark:hover:bg-neutral-100/30 max-md:h-12 max-md:text-lg"
 				href="tel:+923130117243"
 				>Phone
 				<Phone
-					class="w-5 h-5 group-hover:translate-x-2 group-hover:-rotate-45 transition-transform"
+					class="size-5 transition-transform group-hover:translate-x-2 group-hover:-rotate-45 max-md:size-4"
 				/>
 			</a>
 			<a
-				class="flex group gap-2 items-center justify-center w-14 h-14 bg-neutral-100/70 backdrop-blur-xl dark:bg-neutral-100/20 dark:hover:bg-neutral-100/30 hover:bg-neutral-300/30 text-gray-900/80 interactable cursor-none dark:text-neutral-100/80 font-semibold rounded-full text-xl"
+				class="interactable group flex size-14 cursor-none items-center justify-center rounded-full bg-neutral-100/70 text-xl font-semibold text-gray-900/80 backdrop-blur-xl hover:bg-neutral-300/30 dark:bg-neutral-100/20 dark:text-neutral-100/80 dark:hover:bg-neutral-100/30 max-md:size-12"
 				href="https://ahmedrazatalk.slack.com/team/U069ARQ3E94"
-				target="_blank"><Slack class="group-hover:scale-[1.15] transition-transform" /></a
+				target="_blank"><Slack class="transition-transform group-hover:scale-[1.15]" /></a
 			>
 		</div>
 	</form>

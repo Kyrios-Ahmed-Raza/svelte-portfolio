@@ -37,26 +37,26 @@
 	});
 </script>
 
-<div class="bg-gray-100/0 h-full w-full relative dark:bg-gray-900">
-	<div class="w-full h-screen overflow-x-clip absolute pointer-events-none">
+<div class="relative h-full w-full bg-gray-100/0 dark:bg-gray-900">
+	<div class="pointer-events-none absolute h-screen w-full overflow-x-clip">
 		<div
-			class="w-[50vw] h-[50vw] max-md:w-[80vw] max-md:h-[80vw] max-md:-top-[5%] max-md:-left-[5%] top-[-40%] left-[-20%] absolute bg-bubbleclr1/[0.6] dark:bg-bubbleclr1/[0.4]"
+			class="absolute left-[-20%] top-[-40%] h-[50vw] w-[50vw] bg-bubbleclr1/[0.6] dark:bg-bubbleclr1/[0.4] max-md:-left-[5%] max-md:-top-[5%] max-md:h-[80vw] max-md:w-[80vw]"
 			id="bubble1"
 		></div>
 		<div
-			class="w-[50vw] h-[50vw] max-md:w-[80vw] max-md:h-[80vw] max-md:top-[50%] max-md:-right-[10%] top-[-30%] left-[40%] absolute bg-bubbleclr2/[0.6] dark:bg-bubbleclr2/[0.3]"
+			class="absolute left-[40%] top-[-30%] h-[50vw] w-[50vw] bg-bubbleclr2/[0.6] dark:bg-bubbleclr2/[0.3] max-md:-right-[10%] max-md:top-[50%] max-md:h-[80vw] max-md:w-[80vw]"
 			id="bubble2"
 		></div>
 	</div>
 
 	<div
 		id="cursor-dot"
-		class="w-2 h-2 opacity-0 fixed pointer-events-none top-0 left-0 bg-gray-900 dark:bg-neutral-100/80 rounded-full z-[1001]"
+		class="pointer-events-none fixed left-0 top-0 z-[1001] h-2 w-2 rounded-full bg-gray-900 opacity-0 dark:bg-neutral-100/80"
 		bind:this={cursorDot}
 	></div>
 	<div
 		id="cursor-outline"
-		class="w-7 h-7 opacity-0 transition-all duration-300 fixed pointer-events-none top-0 left-0 border-2 bg-gray-900/50 dark:bg-neutral-100/60 border-gray-900/50 dark:border-neutral-100/60 rounded-full z-[1000]"
+		class="pointer-events-none fixed left-0 top-0 z-[1000] h-7 w-7 rounded-full border-2 border-gray-900/30 bg-gray-900/50 opacity-0 transition-all duration-300 dark:border-neutral-100/30 dark:bg-neutral-100/60"
 		bind:this={cursorOutline}
 	></div>
 

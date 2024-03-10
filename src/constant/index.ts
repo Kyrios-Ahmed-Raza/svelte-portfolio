@@ -3,6 +3,7 @@ import { HTMLIcon, CSSIcon, JSIcon, ReactIcon, TailwindIcon } from '../asset/ico
 export const NavLinks = [
 	{ name: 'Home', link: '/' },
 	{ name: 'About', link: '/about' },
+	{ name: 'Skills', link: '/skills' },
 	{ name: 'Projects', link: '/projects' },
 	{ name: 'Testimonials', link: '/testimonials' },
 	{ name: 'Contact', link: '/contact' }

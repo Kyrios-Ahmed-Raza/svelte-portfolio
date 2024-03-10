@@ -12,11 +12,11 @@ body:hover #cursor-outline {
 }
 
 * {
-	@apply scroll-smooth cursor-none transition-colors;
+	@apply scroll-smooth transition-colors sm:cursor-none;
 }
 
 .inputbox {
-	@apply h-14 rounded-full text-gray-900/80 caret-neutral-100/80 dark:text-neutral-100/90 text-xl font-medium px-6 bg-neutral-100/70 dark:bg-neutral-100/20 placeholder:text-lg dark:hover:border-neutral-100/50 hover:border-gray-900/30 dark:focus:border-neutral-100/80 focus:border-gray-900/50 focus:border-[3px] duration-300 outline-none border-2 border-transparent backdrop-blur-3xl placeholder:dark:text-neutral-100/70 placeholder:text-gray-900/60;
+	@apply h-14 rounded-full border-2 border-transparent bg-neutral-100/70 px-6 text-xl font-medium text-gray-900/80 caret-neutral-100/80 outline-none backdrop-blur-3xl duration-300 placeholder:text-lg placeholder:text-gray-900/60 hover:border-gray-900/30 focus:border-[3px] focus:border-gray-900/50 dark:bg-neutral-100/20 dark:text-neutral-100/90 placeholder:dark:text-neutral-100/70 dark:hover:border-neutral-100/50 dark:focus:border-neutral-100/80 max-md:h-12 max-md:text-lg max-md:placeholder:text-base;
 }
 
 .visiblity-hidden {
